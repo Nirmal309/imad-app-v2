@@ -6,21 +6,52 @@ var app = express();
 app.use(morgan('combined'));
 
 
-
-var articleOne={
-  title:'Article one | Tony Stark',
-  heading:'Article one',
-  content:`
-                <p>
-                    This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one.
-                </p>
-                <p>
-                    This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one.
-                </p>
-            
-                <p>
-                    This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one.
-                </p>`
+var articles={
+    articleOne:{
+      title:'Article one | Tony Stark',
+      heading:'Article one',
+      content:`
+                    <p>
+                        This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one.
+                    </p>
+                    <p>
+                        This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one.
+                    </p>
+                
+                    <p>
+                        This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one.
+                    </p>`
+    },
+    articleTwo:{
+        title:'Article Two | Tony Stark',
+      heading:'Article Two',
+      content:`
+                    <p>
+                        This is a content two. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one.
+                    </p>
+                    <p>
+                        This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one.
+                    </p>
+                
+                    <p>
+                        This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one.
+                    </p>`
+    },
+    articleThree:{
+        title:'Article Three | Tony Stark',
+      heading:'Article Three',
+      content:`
+                    <p>
+                        This is a content three. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one.
+                    </p>
+                    <p>
+                        This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one.
+                    </p>
+                
+                    <p>
+                        This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one. This is a content one.
+                    </p>`
+    },
 };
 
 function createTemplate(data){
