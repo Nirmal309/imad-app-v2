@@ -14,6 +14,6 @@ button.onclick = function(){
         }
     };
     
-    request.open("GET","https://nirmal309.imad.hasura-app.io/counter",true);
+    request.open("GET","http://nirmal309.imad.hasura-app.io/counter",true);
     request.send(null);
 };
